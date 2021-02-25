@@ -40,6 +40,8 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
 
   function levelUp() {
     setLevel(level + 1);
+    
+
   }
 
   function startNewChallenge() {
@@ -48,13 +50,13 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
 
     setActiveChallenges(challenge);
 
-    new Audio("./notification.mp3").play();
+    //new Audio("./notification.mp3").play();
 
-    if (Notification.permission === "granted") {
-      new Notification("Novo Desafio 🥳", {
-        body: `Valendo ${challenge.amount}`,
-      });
-    }
+   // if (Notification.permission === "granted") {
+    //  new Notification("Novo Desafio 🥳", {
+    //    body: `Valendo ${challenge.amount}`,
+    //  });
+   // }
   }
 
   function resetChallenge() {

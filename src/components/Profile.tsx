@@ -1,10 +1,14 @@
-import React, { useContext } from 'react'
+import React, { useContext } from "react";
 import styles from "../styles/components/Profile.module.css";
-import { ChallengesContext } from '../context/ChallengesContext'
-
+import { ChallengesContext } from "../context/ChallengesContext";
+import { Fire } from "./Fire";
 export function Profile() {
-
-  const { activeChallenges,resetChallenge,completeChallenge, level } = useContext(ChallengesContext);
+  const {
+    activeChallenges,
+    resetChallenge,
+    completeChallenge,
+    level,
+  } = useContext(ChallengesContext);
 
   return (
     <div className={styles.profileCotainer}>
@@ -13,7 +17,7 @@ export function Profile() {
         <strong>Matheus Pilon</strong>
         <p>
           <img src="icons/level.svg" alt="Level" />
-          Level: {level}
+          Level: {(level % 2 == 0 ? (<span><Fire />{level}</span>) : level)}
         </p>
       </div>
     </div>

@@ -17,6 +17,7 @@
   --blue-dark: #4853b8;
   --blue-twitters: #2aa9e0;
 }
+
 @media (max-width: 1080px) {
     html{
         font-size: 93.75%;

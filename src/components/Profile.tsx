@@ -17,7 +17,7 @@ export function Profile() {
         <strong>Matheus Pilon</strong>
         <p>
           <img src="icons/level.svg" alt="Level" />
-          Level: {(level % 2 == 0 ? (<span><Fire />{level}</span>) : level)}
+          Level: {(level % 2 == 0 ? (<span><Fire /><span style={{color:'white'}}>{level}</span></span>) : level)}
         </p>
       </div>
     </div>

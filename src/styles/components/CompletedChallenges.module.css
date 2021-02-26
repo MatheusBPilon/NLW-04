@@ -18,7 +18,7 @@
 
 .ChallengeBoxContainer {
   height: 100%;
-
+  margin-top: 1.5rem;
   background: var(--white);
   border-radius: 5px;
   box-shadow: 0 0 60 rgba(0, 0, 0, 0.05);

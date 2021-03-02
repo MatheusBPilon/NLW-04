@@ -3,6 +3,7 @@ import { ChallengesContext } from "../context/ChallengesContext";
 import { CountdownContext } from "../context/CountdownContext";
 import styles from "../styles/components/Countdown.module.css";
 
+let test = true
 export function Countdown() {
   const {
     minutes,
@@ -18,7 +19,7 @@ export function Countdown() {
 
   return (
     <div>
-      <div className={styles.countdownContainer}>
+      <div className={test ? styles.countdownContainerDark : styles.countdownContainer}>
         <div>
           <span>{minuteLeft}</span>
           <span>{minuteRight}</span>
@@ -32,7 +33,7 @@ export function Countdown() {
       </div>
 
       {finished ? (
-        <button disabled className={styles.CountdownButton}>
+        <button disabled className={test ? styles.CountdownButtonDark : styles.CountdownButton}>
           Ciclo Encerrado
         </button>
       ) : (
@@ -40,7 +41,7 @@ export function Countdown() {
           {active ? (
             <button
               type="button"
-              className={`${styles.CountdownButton} ${styles.CountdownButtonActive}`}
+              className={test ? `${styles.CountdownButtonDark} ${styles.CountdownButtonActiveDark}` : `${styles.CountdownButton} ${styles.CountdownButtonActive}`}
               onClick={resetCountdown}
             >
               Abandonar ciclo
@@ -48,7 +49,7 @@ export function Countdown() {
           ) : (
             <button
               type="button"
-              className={styles.CountdownButton}
+              className={test ? styles.CountdownButtonDark :styles.CountdownButton}
               onClick={startCountdown}
             >
               Iniciar um ciclo

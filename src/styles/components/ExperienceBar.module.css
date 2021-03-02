@@ -5,6 +5,7 @@
 
 .experienceBar span {
   font-size: 1rem;
+
 }
 
 .experienceBar > div {
@@ -23,6 +24,39 @@
 }
 
 span.currentExperience {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
+}
+
+/* dark mode */
+
+.experienceBarDark {
+  display: flex;
+  align-items: center;
+}
+
+.experienceBarDark span {
+  font-size: 1rem;
+  color:white;
+}
+
+.experienceBarDark > div {
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--gray-line);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.experienceBarDark > div > div {
+  height: 4px;
+  border-radius: 4px;
+  background: #50fa7b;
+}
+
+span.currentExperienceDark {
   position: absolute;
   top: 12px;
   transform: translateX(-50%);

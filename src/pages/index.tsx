@@ -10,6 +10,7 @@ import { CountDownProvider } from "../context/CountdownContext";
 import styles from "../styles/pages/Home.module.css";
 import { ChallengesProvider } from "../context/ChallengesContext";
 
+
 interface HomeProps{
   level: number,
   currentExperience: number,
@@ -19,6 +20,7 @@ interface HomeProps{
 export default function Home(props: HomeProps) {
   console.log(props)
   return (
+    
     <ChallengesProvider level={props.level} 
     currentExperience={props.currentExperience}
     challengesCompleteds={props.challengesCompleteds}
@@ -42,6 +44,7 @@ export default function Home(props: HomeProps) {
       </CountDownProvider>
     </div>
   </ChallengesProvider>
+ 
   );
 }
 

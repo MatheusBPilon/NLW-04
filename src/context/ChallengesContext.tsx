@@ -35,8 +35,8 @@ export function ChallengesProvider({
   children,
   ...rest
 }: ChallengesProviderProps) {
-  const [level, setLevel] = useState(rest.level);
-  const [currentExperience, setCurrentExperience] = useState(rest.currentExperience);
+  const [level, setLevel] = useState(rest.level ? rest.level : 1);
+  const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ? rest.currentExperience : 0);
   const [challengesCompleteds, setChallengesCompleteds] = useState(rest.challengesCompleteds);
 
   const [activeChallenges, setActiveChallenges] = useState(null);

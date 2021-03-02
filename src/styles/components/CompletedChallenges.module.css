@@ -124,3 +124,137 @@
       filter: brightness(0.9);
   }
   
+/* DARK THEME */
+
+
+.completedChallengesContainerDark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 3.5rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d7d8da;
+  font-weight: 500;
+}
+
+.completedChallengesContainerDark span:first-child {
+  font-size: 1.25rem;
+  color: white;
+}
+.completedChallengesContainerDark span:last-child {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.ChallengeBoxContainerDark {
+  height: 100%;
+  margin-top: 1.5rem;
+  background: #44475a;
+  border-radius: 5px;
+  box-shadow: 0 0 60 rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.ChallengeNotActiveDark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ChallengeNotActiveDark strong {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4em;
+  color: white;
+}
+
+.ChallengeNotActiveDark p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4rem;
+  max-width: 70%;
+  color: white;
+  margin-top: 3rem;
+}
+
+.ChallengeNotActiveDark p img {
+  margin-bottom: 1rem;
+}
+
+.ChallengeActiveDark {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ChallengeActiveDark header {
+  color: #50fa7b;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0 2rem 1.5rem;
+  border-bottom: 1px solid var(--gray-lime);
+}
+
+.ChallengeActiveDark main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ChallengeActiveDark main strong {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #50fa7b;
+  margin: 1.5rem 0 1rem;
+}
+
+.ChallengeActiveDark main p {
+  line-height: 1.5;
+  color: white;
+}
+.ChallengeActiveDark footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.ChallengeActiveDark footer button {
+    height:3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border:0;
+    border-radius:5px;
+
+    color: var(--white);
+
+    font-size:1rem;
+    font-weight: 600;
+
+    transition: filter 0.2s;
+  }
+
+  .ChallengeActiveDark footer button.challengeFailedButtonDark {
+    background: var(--red)
+  }
+
+  .ChallengeActiveDark footer button.challengeSuccessButtonDark {
+    background: var(--green)
+  }
+
+  .ChallengeActiveDark footer button:hover{
+      filter: brightness(0.9);
+  }
+  

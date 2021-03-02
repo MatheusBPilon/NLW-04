@@ -51,3 +51,59 @@
     font-size:0px;
 
 }
+
+/* darkMOde */
+
+.overlayDark{
+    background:rgba(40,42,54,0.8);
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerDark{ 
+    background:#6272a4;
+    width: 100%;
+    max-width:400px;
+    padding:2rem 3rem;
+    border-radius:5px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+}
+
+.containerDark header {
+    font-size:8.75rem;
+    font-weight: 600;
+    color:white;
+    background: url('/icons/levelup.svg') no-repeat center;
+    background-size:contain;
+}
+
+.containerDark strong{
+    font-size: 2.25rem;
+    color:var(--title);
+    margin-top: 8.25rem;
+}
+
+.containerDark p{
+    font-size: 2.25rem;
+    color:white;
+    margin-top: 8.25rem;
+}
+
+.containerDark button{
+    position: absolute;
+    right:0.5rem;
+    top:0.5rem;
+    background:transparent;
+    border: 0;
+    font-size:0px;
+
+}

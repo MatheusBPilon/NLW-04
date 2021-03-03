@@ -19,7 +19,7 @@ export function Profile() {
         <p>
           <img src="icons/level.svg" alt="Level" />
           Level:{" "}
-          {level % 2 == 0 ? (
+          {level % 5 == 0 ? (
             <span>
               <Fire />
               <span>{level}</span>
